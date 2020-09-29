@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Bluedart Tracker",
+  "version": "1.0",
+  "description": "Forget the need to remember your bluedart tracking number",
+  "content_scripts": [
+    {
+      "matches": ["https://www.bluedart.com/web/guest/tracking"],
+      "js": ["tracker.js"]
+    },
+    {
+      "matches": ["https://www.bluedart.com/web/guest/trackdartresult"],
+      "js": ["result.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "/icons/icon.svg",
+    "default_popup": "/popup/index.html"
+  },
+  "permissions": ["storage", "tabs"]
+}

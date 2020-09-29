@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preload" href="../fonts/Poppins/Poppins-Regular.ttf" as="font" />
+  </head>
+  <body>
+    <div id="input-container">
+      <input id="trackingID" placeholder="Enter tracking id" />
+      <input id="trackedFor" placeholder="Being tracked for" />
+      <button class="clickable">Go</button>
+    </div>
+    <div id="table-legend">Previously used tracking ids</div>
+    <div class="row" id="header">
+      <span>Tracking ID</span>
+      <span>Tracked For</span>
+    </div>
+    <div id="table-container"></div>
+    <div id="action-menu" style="top: -999px">
+      <img src="../icons/track.png" alt="Track" class="clickable" />
+      <img src="../icons/pencil.png" alt="Edit" class="clickable" />
+      <img src="../icons/garbage.png" alt="Remove" class="clickable" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
